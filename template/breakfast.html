@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- css file added -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- bootstrap added -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <title>django</title>
+</head>
+<body>
+     <!-- <img src="{% static 'images/django.png' %}" alt="">  -->
+    <header> 
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mx-3 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage1'%}">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage2'%}">Breakfast</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage3'%}">Lunch</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage4'%}">Dinner</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage5'%}">Order</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+  <main> 
+    <section class="container m-top-bottom">
+      <h2 class="text blue"> <b> Our Best Healthy Breakfast Menu </b> </h2> <hr>
+      <p>Start your day right with a wholesome and filling breakfast. Whether you prefer something sweet or savory, 
+        these healthy foods make it easy to rise and shine. Order your choice! </p> <br>
+      <!-- breakfast menu -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/br1.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3001 <br>  Name: Breakfast Burritos </h4>
+                      <h5 >Category: Breakfast </h5>
+                      <h6> 80 Taka only (2 piece)</h6>
+                      <p> Whole-wheat breakfast burritos make for a hand-held, vegetable-packed way
+                      start to your day.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/br2.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3002 <br> Name : Bacon and Egg Cups </h4>
+                      <h5 >Category: Breakfast </h5>
+                      <h6> price: 120 taka only (5 piece) </h6>
+                      <p>Everything you've ever craved from a diner breakfast is present in this Whole30-friendly food, 
+                      which is easy to prepare for a crowd.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/br3.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3003 <br> Name: Huevos Rancheros </h4>
+                      <h5 >Category: Breakfast</h5>
+                      <h6> 100 Taka only</h6>
+                      <p>This Mexican dish isn't usually the healthiest breakfast choice, but Sunny Anderson's version is fresh,
+                      light and still full of flavor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/br4.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title"> Food id: 3004 <br> Name: Paleo Pumpkin Waffles </h4>
+                        <h5 >Category: Breakfast </h5>
+                        <h6> 80 Taka only</h6>
+                        <p> Satisfy your paleo cravings with these wholesome waffles, naturally sweetened with pumpkin puree
+                        and a quick raspberry compote. </p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/br5.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3005 <br> Name: Veggie-Packed Frittata</h4>
+                        <h5> Category: Breakfast </h5>
+                        <h6> 100 Taka only</h6>
+                        <p>Make this satisfying egg dish for an easy on-the-go breakfast. It's packed with veggies and
+                        can be stored in the fridge for the week. Eat it hot or cold, depending on how much time you  </p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/br6.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title"> Food id: 3006 <br> Name: Hot Apple Cereal </h4>
+                        <h5> Category: Breakfast </h5>
+                        <h6> 100 Taka only</h6>
+                        <p>This grainless porridge relies on sweet and tart Honeycrisp apples to make a chunky sauce 
+                        enriched with coconut milk, cashews and ground flaxseed.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/br7.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3007 <br> Name: Whole-Grain Breakfast Poridge</h4>
+                        <h5> Category: Breakfast </h5>
+                        <h6> 100 Taka only</h6>
+                        <p>A rice cooker makes a comforting bowl of this four-grain porridge so easy to enjoy.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/br8.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3008 <br> Name: Whole-Wheat Pancakes</h4>
+                        <h5 > Category: Breakfast </h5>
+                        <h6> 120 Taka only</h6>
+                        <p>Make a delicious breakfast that really shows your family members you love them. 
+                        These heart-shaped pancakes come on a warm bed of strawberry sauce that's easy to make and 
+                        incredibly healthy.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/br9.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3009 <br> Name: Skillet Eggs with Squash</h4>
+                        <h5 > Category: Breakfast </h5>
+                        <h6> 120 Taka only</h6>
+                        <p>In this crowd-pleasing recipe, baked eggs sit atop grated summer squash and zucchini, 
+                        with a healthy dose of spicy pepper Jack cheese, nutmeg and scallions.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/br10.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3010 <br> Name: Cinnamon-Oatmeal Pancakes </h4>
+                      <h5 >Category: Breakfast </h5>
+                      <h6> 110 Taka only</h6>
+                      <p> These healthier pancakes feature a mix of whole-wheat flour and oats and are topped with
+                      a naturally sweet apple compote made with fruit, cider and honey.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/br11.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Food id: 3011 <br> Name: Potato Zucchini Frittata</h4>
+                      <h5 > Category: Breakfast </h5>
+                      <h6> 90 Taka only</h6>
+                      <p>Loaded with vegetables and lightened up with egg whites and turkey bacon, this easy frittata 
+                      is a perfect dish for entertaining at brunch.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/br12.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3012 <br> Name: Baked Eggs with Salsa Verde </h4>
+                      <h5 >Category: Breakfast </h5>
+                      <h6> 70 Taka only</h6>
+                      <p> This cheesy egg breakfast could make mornings a whole lot more fun. Fresh cilantro and creamy Monterey
+                      Jack tame the heat from the tomatillos and jalapenos in the salsa verde.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    </section>
+  </main>
+  <br><br>
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center p-3">
+      <div>
+          <h1 class="clr"> Food Network </h1> <br> 
+          <p class="align-center color-orange"> Eat healthy to live healthy. Live healthy to live healthy. </p>
+          <br> <br>
+      </div>
+    </footer>
+    <!-- bootstrap js file added -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"> </script>
+</body>
+</html>

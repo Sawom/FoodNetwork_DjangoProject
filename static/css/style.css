@@ -1,0 +1,79 @@
+h1{
+    color:whitesmoke;
+    font-size: 50px;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+}
+header{
+    background-color: #264653;
+}
+.clr{
+    color: white;
+}
+.text{
+    text-align: center;
+}
+.color-orange{
+    color: darkorange;
+}
+.align-center{
+    text-align: center;
+}
+.nutritionist{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px 3px  lightgray;
+}
+.nutritionist img{
+    width: 90%;
+}
+.blue{
+    color: darkblue;
+}
+span{
+    color: #E76F51;
+}
+.black{
+    color: black;
+}
+p{
+    font-size: 20px;
+}
+.cfrom{
+    background-color: rgb(238, 205, 143);
+}
+.m-top-bottom{
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px  lightgray;
+}
+.card-footer{
+    background-color: white;
+    border-top: none;
+}
+.filled{
+    color: #FFC014;
+    font-size: 14px;
+}
+.empty{
+    color:#AEAEAE ;
+    font-size: 14px;
+}
+footer{
+    display: flex;
+    margin-top: 40px;
+    background-color: #264653;
+    justify-content: center;
+    align-items: center;
+}

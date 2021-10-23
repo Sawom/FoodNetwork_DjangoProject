@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- google font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- css file added -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- bootstrap added -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <title>django</title>
+</head>
+<body>
+     <!-- <img src="{% static 'images/django.png' %}" alt="">  -->
+    <header> 
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mx-3 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage1'%}">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage2'%}">Breakfast</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage3'%}">Lunch</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage4'%}">Dinner</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage5'%}">Order</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>  
+    </header>
+  <br><br>
+  <main>
+    <section class="container m-top-bottom">
+      <h2 class="text blue"> <b> Our Best Healthy Lunch Menu </b> </h2> <hr>
+      <p>Stuck in a rut when it comes to lunch? These food will change that.
+         From hearty soups and grain bowls to flavor-packed sandwiches and salads — these 
+        midday meals will help you re-think your regular routine. </p> <br>
+      <!-- Lunch menu -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/lunch1.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3101 <br>  Name: Chickpea Salad Sandwiches </h4>
+                      <h5 >Category: Lunch </h5>
+                      <h6> 130 taka only </h6>
+                      <p> This vegetarian riff on a classic chicken salad sandwich is both satisfying and loaded with 
+                          flavor. We added a sprinkle of roasted pepitas and a handful of hearty baby kale for texture and
+                          crunch. Serve on toasted whole wheat bread or with vegetables and crackers for a wholesome meal.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/lunch2.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3102 <br> Name : Soba Noodles with Vegetable</h4>
+                      <h5 >Category: Lunch </h5>
+                      <h6> price:  90 taka only </h6>
+                      <p>These cold noodles are the perfect thing to make if you need a packed lunch. 
+                        They're vegetarian, but still full of protein. Go ahead and double the recipe to cover lunch for another day.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/lunch3.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3103 <br> Name: Apple Grilled Cheese Sandwiche</h4>
+                      <h5 >Category: Lunch</h5>
+                      <h6> 70 Taka only</h6>
+                      <p>The classic combination of tart apples and savory Cheddar transform a basic grilled cheese 
+                          into a lunch that's perfect for fall — or any time of the year.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/lunch4.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title"> Food id: 3104 <br> Name: Mexican Chicken Soup </h4>
+                        <h5 >Category: Lunch </h5>
+                        <h6> 80 Taka only</h6>
+                        <p> Soup makes a great lunch because you can make it ahead and reheat it whenever you're ready 
+                          to eat. If you can't find the posole (also called hominy) that this recipe calls for, feel free
+                          to substitute frozen corn kernels. </p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/lunch5.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3105 <br> Name: Mediterranean Tuna Wrap</h4>
+                        <h5> Category: Lunch </h5>
+                        <h6> 110 Taka only</h6>
+                        <p>This food is made with classic tuna salad with her 5-star recipe. We use olive oil, 
+                            lemon salt and pepper to dress the tuna instead of mayonnaise, and adds onion, herbs and olives 
+                            for even more flavor.  </p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/lunch6.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title"> Food id: 3106 <br> Name:  BLT Bean Salad </h4>
+                        <h5> Category: Lunch </h5>
+                        <h6> 70 Taka only</h6>
+                        <p>All the flavors of a classic BLT sandwich come together in this hearty bean salad. 
+                          The homemade herb-mayo dressing adds freshness while the crisp bacon and croutons add a 
+                          welcomed crunch. It's a great way to use up those pantry beans.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/lunch7.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3107 <br> Name: Turkey Frittata</h4>
+                        <h5> Category: Lunch </h5>
+                        <h6> 120 Taka only</h6>
+                        <p>Frittata makes a great lunch because it can easily be adapted to whatever you have on hand. 
+                          This speedy recipe calls for bell pepper, boiled potatoes and turkey but other add-ins like
+                          mushrooms, leftover cooked veggies, tomatoes, greens and chicken would all work well too.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/lunch8.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3108 <br> Name:Caprese Salad Sub Sandwich</h4>
+                        <h5 > Category: Lunch </h5>
+                        <h6> 90 Taka only</h6>
+                        <p>The best way to upgrade a classic tomato and mozzarella sandwich? Serve it on garlic toast 
+                        with fresh basil and thinly sliced salami and ham!</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/lunch9.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3109 <br> Name: Buffalo Chicken Pizza</h4>
+                        <h5 > Category: Lunch </h5>
+                        <h6> 150 Taka only</h6>
+                        <p>This pizza is totally doable at lunch time, thanks to 
+                          refrigerated pizza dough and pre-cooked rotisserie chicken.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/lunch10.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3110 <br> Name: Soup with Rice and Hominy</h4>
+                      <h5 >Category: Lunch </h5>
+                      <h6> 80 Taka only</h6>
+                      <p> We use a few tricks to get maximum comforting flavor into the soup, starting by enriching the
+                          chicken broth with a roast chicken carcass and by adding chopped cilantro and scallion at the
+                          very end for freshness.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/lunch11.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Food id: 3111 <br> Name: Beef Picadillo Enchiladas</h4>
+                      <h5 > Category: Lunch </h5>
+                      <h6> 160 Taka only</h6>
+                      <p>Loaded with vegetables and lightened up with egg whites and turkey bacon, this easy frittata 
+                      is a perfect dish for entertaining at brunch.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/lunch12.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3112 <br> Name: Mini Meatballs</h4>
+                      <h5 >Category: Lunch </h5>
+                      <h6> 150 Taka only (10 piece)</h6>
+                      <p>  Meatball appetizer is great for entertaining a crowd. Each small bite is packed
+                      with beef, garlic, onion and fresh parsley, so a little goes a long way.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    </section>
+  </main>
+  <br><br>
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center p-3">
+      <div>
+          <h1 class="clr"> Food Network </h1> <br> 
+          <p class="align-center color-orange"> Eat healthy to live healthy. Live healthy to live healthy. </p>
+          <br> <br>
+          
+      </div>
+    </footer>
+
+    <!-- bootstrap js file added -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"> </script>
+</body>
+</html>

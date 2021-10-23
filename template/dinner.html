@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- css file added -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- bootstrap added -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <title>django</title>
+</head>
+<body>
+     <!-- <img src="{% static 'images/django.png' %}" alt="">  -->
+    <header> 
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mx-3 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage1'%}">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage2'%}">Breakfast</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage3'%}">Lunch</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage4'%}">Dinner</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'webpage5'%}">Order</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+        </nav>
+  
+    </header>
+<br><br>
+  <main>
+    <section class="container m-top-bottom">
+      <h2 class="text blue"> <b> Our Healthy Dinner Menu </b> </h2> <hr>
+      <p>Healthy food fast? Yes, it's possible! These meals are on the table in time. <br> Order us! </p> <br>
+      <!-- dinner menu -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/dinner1.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3201 <br>  Name: Chili Chicken Hominy Hash </h4>
+                      <h5 >Category: Dinner </h5>
+                      <h6> 160 taka only </h6>
+                      <p> Not only is this meal quick and delicious, it's also brimming with unexpected flavor! 
+                        We use a zesty blend of chili powder, cumin, cinnamon and lime to coat your chicken thighs 
+                        and roast hominy, squash and bell pepper together to make the mouthwatering side.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/dinner2.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3202 <br> Name : Chicken Katsu Ginger Rice </h4>
+                      <h5 >Category: Dinner </h5>
+                      <h6> price:  160 taka only </h6>
+                      <p>The perfect trio: Lightly breaded chicken, vibrant ginger and bok choy rice, tangy Katsu 
+                        sauce. This Asian inspired dish establishes layers of flavors through seemingly simple ingredients 
+                        like ginger, bok choy and rice.Pair it with the crispy fried chicken and you’ll have an array 
+                        of unparalleled flavors and textures.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/dinner3.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3203 <br> Name: Ribbony Shrimp Pasta Scampi </h4>
+                      <h5 >Category: Dinner</h5>
+                      <h6> 150 Taka only</h6>
+                      <p>Medium-size shrimp are the perfect size for a twirl of spaghetti shot through with ribbons of squash.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/dinner4.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title"> Food id: 3204 <br> Name:  Beef Stir-Fry </h4>
+                        <h5 >Category: Dinner </h5>
+                        <h6> 180 Taka only</h6>
+                        <p> This veggie-packed stir-fry is perfect for all those late nights when you're craving
+                            take-out food but still want to stay healthy.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/dinner5.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3205 <br> Name: Fettuccine Zucchini Ribbons</h4>
+                        <h5> Category: Dinner </h5>
+                        <h6> 170 Taka only</h6>
+                        <p>  A combination of zucchini and yellow summer squash, cut into thin ribbons, makes this pasta
+                            as colorful as it is vegetable-packed. Whole-wheat pasta adds more fiber to the mix. </p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/dinner6.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title"> Food id: 3206 <br> Name: Grilled Salmon with Edamame </h4>
+                        <h5> Category: Dinner </h5>
+                        <h6> 120 Taka only</h6>
+                        <p>The natural Omega-3 fats in salmon make it a great choice for a healthy meal that doesn't 
+                            need much added fat. Stuff a mixture of fresh herbs into the salmon to infuse the fish with bright flavor.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/dinner7.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3207 <br> Name: Veggie Noodles with Chicken</h4>
+                        <h5> Category: Dinner </h5>
+                        <h6> 110 Taka only</h6>
+                        <p> This veggie-heavy chicken dish boasts tons of flavor -- thanks to red curry paste, almond 
+                          butter and cashews.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/dinner8.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3208 <br> Name: Pasta Puttanesca</h4>
+                        <h5 > Category: Dinner </h5>
+                        <h6> 130 Taka only</h6>
+                        <p>The beauty of this classic Italian pasta dish is that is comes together quickly with 
+                          ingredients you most likely already have in your pantry, like spaghetti, canned tomatoes,
+                          garlic, anchovy paste and crushed red pepper flakes.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card h-100">
+                      <img src="{% static 'images/dinner9.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Food id: 3209 <br> Name: Sheet Pan Chicken Fajitas</h4>
+                        <h5 > Category: Dinner </h5>
+                        <h6> 170 Taka only</h6>
+                        <p>These protein-packed fajitas cleverly use a foil-lined baking sheet and broiler to make a 
+                          quick and healthy weeknight meal with easy cleanup.</p>
+                      </div>
+                      <div class="card-footer">
+                          <h5>Order Now!!</h5>
+                      </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/dinner10.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3210 <br> Name: Salmon with Kale & Apple Salad </h4>
+                      <h5 >Category: Dinner </h5>
+                      <h6> 140 Taka only</h6>
+                      <p> This dish may look fancy, but it's easy enough to be a weeknight main course. The salmon 
+                          cooks in a skillet in less than 10 minutes while the flavors in the crunchy kale salad meld.
+                          Add a whole-wheat roll and dinner is ready. </p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/dinner11.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Food id: 3211 <br> Name: Lemon-Garlic Shrimp & Grits </h4>
+                      <h5 > Category: Dinner </h5>
+                      <h6> 170 Taka only</h6>
+                      <p>You won't find sticks of butter in this comfort food. Don't worry about flavor, though; 
+                        these shrimp are plenty zesty from the lemon and garlic.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card h-100">
+                    <img src="{% static 'images/dinner12.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title"> Food id: 3212 <br> Name: Garlic-Ginger Chicken Thighs</h4>
+                      <h5 >Category: Dinner </h5>
+                      <h6> 180 Taka only </h6>
+                      <p> Save yourself some time on the day of a cookout and marinade your chicken in a blend of
+                          garlic, ginger, soy sauce and orange juice the night before.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Order Now!!</h5>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    </section>
+
+  </main>
+  <br><br>
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center p-3">
+      <div>
+          <h1 class="clr"> Food Network </h1> <br> 
+          <p class="align-center color-orange"> Eat healthy to live healthy. Live healthy to live healthy. </p>
+          <br> <br>  
+      </div>
+    </footer>
+    <!-- bootstrap js file added -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"> </script>
+</body>
+</html>
